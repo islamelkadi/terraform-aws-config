@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.4.0...v1.5.0) (2026-01-21)
+
+
+### Features
+
+* Add pre-commit hooks for Terraform linting and validation ([7b20b37](https://github.com/islamelkadi/terraform-aws-config/commit/7b20b3747237e98c48c041f3222021648cab45b7))
+
 ## [1.4.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.3.0...v1.4.0) (2026-01-21)
 
 
