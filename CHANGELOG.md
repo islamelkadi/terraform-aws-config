@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.2.0...v1.3.0) (2026-01-21)
+
+
+### Features
+
+* added .tflint configurations ([5d1a000](https://github.com/islamelkadi/terraform-aws-config/commit/5d1a000086d483213c772a9a8f6b70fb63a6a092))
+
 ## [1.2.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.1.0...v1.2.0) (2026-01-21)
 
 
