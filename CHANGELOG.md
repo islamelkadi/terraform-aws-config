@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.1.0...v1.2.0) (2026-01-21)
+
+
+### Features
+
+* added Terraform checkov scans config file ([83c59f1](https://github.com/islamelkadi/terraform-aws-config/commit/83c59f14c6c10ec8d493570ac4875d95af00bb74))
+
 ## [1.1.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.0.0...v1.1.0) (2026-01-21)
 
 
