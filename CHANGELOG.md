@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.0.0...v1.1.0) (2026-01-21)
+
+
+### Features
+
+* Add Terraform lint and format check workflow ([52cdd1c](https://github.com/islamelkadi/terraform-aws-config/commit/52cdd1cee0e74fe10276256db4fe195cb5332130))
+
 ## 1.0.0 (2026-01-21)
 
 
