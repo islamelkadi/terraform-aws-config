@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/islamelkadi/terraform-aws-config/compare/v1.6.0...v1.6.1) (2026-01-21)
+
+
+### Bug Fixes
+
+* Addressed linter warnings ([#2](https://github.com/islamelkadi/terraform-aws-config/issues/2)) ([57c9273](https://github.com/islamelkadi/terraform-aws-config/commit/57c92733f2fbbb7a21ccd31574b2ade9b5a33ca2))
+
 ## [1.6.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.5.0...v1.6.0) (2026-01-21)
 
 
