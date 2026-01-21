@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.5.0...v1.6.0) (2026-01-21)
+
+
+### Features
+
+* Add AWS Config Configuration Aggregator resource ([8e71b4e](https://github.com/islamelkadi/terraform-aws-config/commit/8e71b4e5288d826721da2abc9073fa8152aab4e6))
+
 ## [1.5.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.4.0...v1.5.0) (2026-01-21)
 
 
