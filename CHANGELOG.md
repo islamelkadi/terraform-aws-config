@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.3.0...v1.4.0) (2026-01-21)
+
+
+### Features
+
+* Add .terraform-docs.yaml configuration file ([ccc05bf](https://github.com/islamelkadi/terraform-aws-config/commit/ccc05bf2d09edf5bd573d5a011580492c2d2961a))
+
 ## [1.3.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.2.0...v1.3.0) (2026-01-21)
 
 
