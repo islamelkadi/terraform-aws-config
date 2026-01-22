@@ -11,6 +11,7 @@ on:
       - '**.tf'
       - '.checkov.yaml'
       - '.github/workflows/checkov.yml'
+  workflow_dispatch:
 
 jobs:
   checkov:
