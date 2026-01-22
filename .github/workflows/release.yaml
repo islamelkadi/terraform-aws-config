@@ -22,4 +22,4 @@ jobs:
     with:
       node_version: 'lts/*'
     secrets:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
+      token: ${{ secrets.GITHUB_TOKEN }}
