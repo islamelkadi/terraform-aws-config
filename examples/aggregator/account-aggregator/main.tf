@@ -1,6 +1,6 @@
 # Account-level Config Aggregator
 module "config_aggregator" {
-  source = "../../modules/config/aggregator"
+  source = "../../../modules/config/aggregator"
 
   # Generic variables
   environment  = var.environment
