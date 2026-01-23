@@ -5,6 +5,7 @@ on:
     workflows: 
       - "Terraform Lint and Format Check"
       - "Terraform Security Scan (SAST)"
+      - "Terraform Docs Check"
     types:
       - completed
     branches:
