@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.6.1...v1.7.0) (2026-01-23)
+
+
+### Features
+
+* Create terraform-docs.yaml ([c10c1b1](https://github.com/islamelkadi/terraform-aws-config/commit/c10c1b1c9908ca164c5d26ad3f133771a62c3ddd))
+
 ## [1.6.1](https://github.com/islamelkadi/terraform-aws-config/compare/v1.6.0...v1.6.1) (2026-01-21)
 
 
