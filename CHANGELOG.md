@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/islamelkadi/terraform-aws-config/compare/v1.7.0...v1.7.1) (2026-01-25)
+
+
+### Bug Fixes
+
+* Update .terraform-docs.yaml ([066c48c](https://github.com/islamelkadi/terraform-aws-config/commit/066c48c9edf54ffc4e8dae1931186c760671834e))
+
 ## [1.7.0](https://github.com/islamelkadi/terraform-aws-config/compare/v1.6.1...v1.7.0) (2026-01-23)
 
 
