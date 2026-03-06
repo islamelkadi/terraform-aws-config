@@ -1,7 +1,9 @@
+# Config Aggregator Module
+# Creates AWS Config configuration aggregator
+
 resource "aws_config_configuration_aggregator" "this" {
-  name   = "${local.project_id_prefix}-${var.aggregator_name}"
-  region = var.region
-  tags   = var.additional_tags
+  name = local.aggregator_name
+  tags = local.tags
 
   dynamic "account_aggregation_source" {
     for_each = var.enable_account_aggregation ? [1] : []
