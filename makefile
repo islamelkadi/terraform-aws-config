@@ -1,30 +1,39 @@
 # Terraform Module: Config
 # This makefile provides common Terraform operations for the Config module
 
-.PHONY: help init validate fmt lint security plan clean docs submodules
+.PHONY: help bootstrap fmt lint security docs submodules clean all
 
 # Default target
 help:
 	@echo "Available targets:"
-	@echo "  init       - Initialize Terraform (download providers)"
-	@echo "  validate   - Validate Terraform configuration"
+	@echo "  bootstrap  - Install required tools (macOS only)"
 	@echo "  fmt        - Format Terraform files"
 	@echo "  lint       - Run tflint on configuration"
 	@echo "  security   - Run security scan with checkov"
 	@echo "  docs       - Generate module documentation"
 	@echo "  submodules - Run all checks on submodules"
 	@echo "  clean      - Remove Terraform state and cache files"
-	@echo "  all        - Run init, fmt, validate, lint, security, docs, submodules"
+	@echo "  all        - Run fmt, lint, security, docs, submodules"
 
-# Initialize Terraform
-init:
-	@echo "Initializing Terraform..."
-	terraform init -upgrade
-
-# Validate configuration
-validate: init
-	@echo "Validating Terraform configuration..."
-	terraform validate
+# Install required tools (macOS)
+bootstrap:
+	@echo "Bootstrapping development environment..."
+	@which brew > /dev/null || (echo "Error: Homebrew is required. Install from https://brew.sh" && exit 1)
+	@echo "Installing tfenv..."
+	@brew list tfenv > /dev/null 2>&1 || brew install tfenv
+	@echo "Installing Terraform via tfenv..."
+	@tfenv install latest && tfenv use latest
+	@echo "Installing tflint..."
+	@brew list tflint > /dev/null 2>&1 || brew install tflint
+	@echo "Installing terraform-docs..."
+	@brew list terraform-docs > /dev/null 2>&1 || brew install terraform-docs
+	@echo "Installing checkov..."
+	@pip install --quiet --upgrade checkov
+	@echo "Installing pre-commit..."
+	@pip install --quiet --upgrade pre-commit
+	@echo "Setting up pre-commit hooks..."
+	@pre-commit install
+	@echo "Bootstrap complete!"
 
 # Format Terraform files
 fmt:
@@ -32,7 +41,7 @@ fmt:
 	terraform fmt -recursive
 
 # Run tflint
-lint: init
+lint:
 	@echo "Running tflint..."
 	tflint --init
 	tflint
@@ -68,5 +77,5 @@ clean:
 	done
 
 # Run all checks
-all: init fmt validate lint security docs submodules
+all: fmt lint security docs submodules
 	@echo "All checks completed successfully!"
