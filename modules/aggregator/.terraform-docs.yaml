@@ -1,4 +1,4 @@
-# Terraform-docs configuration for submodules
+# Terraform-docs configuration
 # https://terraform-docs.io/
 
 formatter: markdown table
@@ -10,6 +10,7 @@ footer-from: ""
 
 recursive:
   enabled: false
+  path: modules
 
 sections:
   hide: []
@@ -32,7 +33,7 @@ content: |-
 
   ## License
 
-  MIT Licensed. See [LICENSE](../../LICENSE) for full details.
+  MIT Licensed. See [LICENSE](LICENSE) for full details.
 
 output:
   file: README.md
