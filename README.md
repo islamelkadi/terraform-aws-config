@@ -17,33 +17,10 @@ make bootstrap
 
 This will install/upgrade: tfenv, Terraform (via tfenv), tflint, terraform-docs, checkov, and pre-commit.
 
-## Submodules
 
-| Submodule | Description |
-|-----------|-------------|
-| [aggregator](modules/aggregator/) | AWS Config Aggregator for multi-account/region compliance |
+## Security
 
-## Usage
-
-```hcl
-module "config_aggregator" {
-  source = "path/to/terraform-aws-config/modules/aggregator"
-
-  organization = "ws"
-  environment  = "prod"
-  project_name = "compliance"
-  region       = "us-east-1"
-
-  aggregator_name    = "org-aggregator"
-  enable_all_regions = true
-
-  enable_organization_aggregation = true
-
-  additional_tags = var.tags
-}
-```
-
-## Security Controls
+### Security Controls
 
 Implements controls for FSBP, CIS, NIST 800-53/171, and PCI DSS v4.0:
 
@@ -53,6 +30,25 @@ Implements controls for FSBP, CIS, NIST 800-53/171, and PCI DSS v4.0:
 - SNS notifications for compliance violations
 - IAM least privilege for Config service role
 - Security control overrides with audit justification
+
+### Environment-Based Security Controls
+
+Security controls are automatically applied based on the environment through the [terraform-aws-metadata](https://github.com/islamelkadi/terraform-aws-metadata?tab=readme-ov-file#security-profiles){:target="_blank"} module's security profiles:
+
+| Control | Dev | Staging | Prod |
+|---------|-----|---------|------|
+| KMS encryption | Optional | Required | Required |
+| Continuous recording | Optional | Required | Required |
+| SNS notifications | Optional | Recommended | Required |
+| Multi-region aggregation | Optional | Recommended | Required |
+
+For full details on security profiles and how controls vary by environment, see the <a href="https://github.com/islamelkadi/terraform-aws-metadata?tab=readme-ov-file#security-profiles" target="_blank">Security Profiles</a> documentation.
+## Submodules
+
+| Submodule | Description |
+|-----------|-------------|
+| [aggregator](modules/aggregator/) | AWS Config Aggregator for multi-account/region compliance |
+
 
 ## Module Structure
 
@@ -71,18 +67,6 @@ terraform-aws-config/
 | terraform | >= 1.14.3 |
 | aws | >= 6.34 |
 
-## Environment-Based Security Controls
-
-Security controls are automatically applied based on the environment through the [terraform-aws-metadata](https://github.com/islamelkadi/terraform-aws-metadata?tab=readme-ov-file#security-profiles){:target="_blank"} module's security profiles:
-
-| Control | Dev | Staging | Prod |
-|---------|-----|---------|------|
-| KMS encryption | Optional | Required | Required |
-| Continuous recording | Optional | Required | Required |
-| SNS notifications | Optional | Recommended | Required |
-| Multi-region aggregation | Optional | Recommended | Required |
-
-For full details on security profiles and how controls vary by environment, see the <a href="https://github.com/islamelkadi/terraform-aws-metadata?tab=readme-ov-file#security-profiles" target="_blank">Security Profiles</a> documentation.
 
 ## MCP Servers
 
