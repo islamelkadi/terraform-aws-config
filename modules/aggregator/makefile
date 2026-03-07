@@ -1,7 +1,7 @@
 # Terraform Submodule: Aggregator
 # This makefile provides common Terraform operations for the Aggregator submodule
 
-.PHONY: help init validate fmt lint security clean docs
+.PHONY: help init validate fmt lint security docs clean all
 
 # Default target
 help:
