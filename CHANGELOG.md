@@ -1,3 +1,14 @@
+## 1.0.0 (2026-03-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* First publish - Config Terraform module
+
+### Features
+
+* First publish - Config Terraform module ([a78ac9f](https://github.com/islamelkadi/terraform-aws-config/commit/a78ac9f49916fa02e7cd9da20b36526cda7bd555))
+
 ## [1.7.1](https://github.com/islamelkadi/terraform-aws-config/compare/v1.7.0...v1.7.1) (2026-01-25)
 
 
