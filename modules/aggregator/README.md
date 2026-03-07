@@ -1,17 +1,5 @@
-## Environment-Based Security Controls
-
-Security controls are automatically applied based on the environment through the [terraform-aws-metadata](https://github.com/islamelkadi/terraform-aws-metadata?tab=readme-ov-file#security-profiles){:target="_blank"} module's security profiles:
-
-| Control | Dev | Staging | Prod |
-|---------|-----|---------|------|
-| Multi-region aggregation | Optional | Recommended | Required |
-| Organization aggregation | Optional | Recommended | Required |
-| IAM role restrictions | Enforced | Enforced | Enforced |
-
-For full details on security profiles and how controls vary by environment, see the <a href="https://github.com/islamelkadi/terraform-aws-metadata?tab=readme-ov-file#security-profiles" target="_blank">Security Profiles</a> documentation.
 
 <!-- BEGIN_TF_DOCS -->
-
 
 ## Requirements
 
@@ -62,7 +50,3 @@ For full details on security profiles and how controls vary by environment, see 
 | <a name="output_config_aggregator_arn"></a> [config\_aggregator\_arn](#output\_config\_aggregator\_arn) | The ARN of the created AWS config aggregator |
 | <a name="output_config_aggregator_id"></a> [config\_aggregator\_id](#output\_config\_aggregator\_id) | The ID of the created AWS config aggregator |
 
-## License
-
-MIT Licensed. See [LICENSE](LICENSE) for full details.
-<!-- END_TF_DOCS -->
