@@ -2,7 +2,7 @@
 # Provides standardized naming and tagging
 
 module "metadata" {
-  source = "github.com/islamelkadi/terraform-aws-metadata?ref=v1.1.0"
+  source = "github.com/islamelkadi/terraform-aws-metadata"
 
   namespace     = var.namespace
   project_name  = var.name
