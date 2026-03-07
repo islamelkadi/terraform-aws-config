@@ -19,12 +19,6 @@ sections:
 content: |-
   {{ .Header }}
 
-  ## Usage
-
-  ```hcl
-  {{ include "example/main.tf" }}
-  ```
-
   {{ .Requirements }}
 
   {{ .Providers }}
@@ -36,10 +30,6 @@ content: |-
   {{ .Inputs }}
 
   {{ .Outputs }}
-
-  ## Example
-
-  See [example/](example/) for a complete working example with all features.
 
   ## License
 
