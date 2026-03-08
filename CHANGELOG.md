@@ -13,6 +13,25 @@
 ### Bug Fixes
 
 * add CKV_TF_1 suppression for external module metadata ([623a753](https://github.com/islamelkadi/terraform-aws-config/commit/623a753a60118073ab4212f5c67c89a311b84418))
+* correct .checkov.yaml format to use simple list instead of id/comment dict ([89ce0c4](https://github.com/islamelkadi/terraform-aws-config/commit/89ce0c462a4b72a5bf6c409366ea56d13800b69d))
+* remove skip-path from .checkov.yaml, rely on workflow-level skip_path ([de6833b](https://github.com/islamelkadi/terraform-aws-config/commit/de6833b64403c48898f7296649b13b3bf1959637))
+* update workflow path reference to terraform-security.yaml ([5246a0b](https://github.com/islamelkadi/terraform-aws-config/commit/5246a0ba183c5764bce9d4bca74e76c0afdcdbb1))
+
+## 1.0.0 (2026-03-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* First publish - Config Terraform module
+
+### Features
+
+* First publish - Config Terraform module ([a78ac9f](https://github.com/islamelkadi/terraform-aws-config/commit/a78ac9f49916fa02e7cd9da20b36526cda7bd555))
+
+
+### Bug Fixes
+
+* add CKV_TF_1 suppression for external module metadata ([623a753](https://github.com/islamelkadi/terraform-aws-config/commit/623a753a60118073ab4212f5c67c89a311b84418))
 * update workflow path reference to terraform-security.yaml ([5246a0b](https://github.com/islamelkadi/terraform-aws-config/commit/5246a0ba183c5764bce9d4bca74e76c0afdcdbb1))
 
 ## 1.0.0 (2026-03-08)
