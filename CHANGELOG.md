@@ -9,6 +9,22 @@
 
 * First publish - Config Terraform module ([a78ac9f](https://github.com/islamelkadi/terraform-aws-config/commit/a78ac9f49916fa02e7cd9da20b36526cda7bd555))
 
+
+### Bug Fixes
+
+* update workflow path reference to terraform-security.yaml ([5246a0b](https://github.com/islamelkadi/terraform-aws-config/commit/5246a0ba183c5764bce9d4bca74e76c0afdcdbb1))
+
+## 1.0.0 (2026-03-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* First publish - Config Terraform module
+
+### Features
+
+* First publish - Config Terraform module ([a78ac9f](https://github.com/islamelkadi/terraform-aws-config/commit/a78ac9f49916fa02e7cd9da20b36526cda7bd555))
+
 ## 1.0.0 (2026-03-07)
 
 
