@@ -1,5 +1,9 @@
 # Terraform AWS Config Module
 
+[![Terraform Security](https://github.com/islamelkadi/terraform-aws-config/actions/workflows/terraform-security.yaml/badge.svg)](https://github.com/islamelkadi/terraform-aws-config/actions/workflows/terraform-security.yaml)
+[![Terraform Lint & Validation](https://github.com/islamelkadi/terraform-aws-config/actions/workflows/terraform-lint.yaml/badge.svg)](https://github.com/islamelkadi/terraform-aws-config/actions/workflows/terraform-lint.yaml)
+[![Terraform Docs](https://github.com/islamelkadi/terraform-aws-config/actions/workflows/terraform-docs.yaml/badge.svg)](https://github.com/islamelkadi/terraform-aws-config/actions/workflows/terraform-docs.yaml)
+
 Reusable Terraform module for AWS Config service with aggregation support.
 
 ## Prerequisites
