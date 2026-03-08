@@ -50,3 +50,4 @@
 | <a name="output_config_aggregator_arn"></a> [config\_aggregator\_arn](#output\_config\_aggregator\_arn) | The ARN of the created AWS config aggregator |
 | <a name="output_config_aggregator_id"></a> [config\_aggregator\_id](#output\_config\_aggregator\_id) | The ID of the created AWS config aggregator |
 
+<!-- END_TF_DOCS -->
