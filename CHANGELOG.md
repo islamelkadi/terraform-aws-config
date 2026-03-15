@@ -1,3 +1,31 @@
+## 1.0.0 (2026-03-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* First publish - Config Terraform module
+
+### Features
+
+* add manual triggering to release workflow ([d13ceec](https://github.com/islamelkadi/terraform-aws-config/commit/d13ceecb33a7fe6220bc3f0e2a2fa882c5068f8f))
+* First publish - Config Terraform module ([a78ac9f](https://github.com/islamelkadi/terraform-aws-config/commit/a78ac9f49916fa02e7cd9da20b36526cda7bd555))
+
+
+### Bug Fixes
+
+* add CKV_TF_1 suppression for external module metadata ([623a753](https://github.com/islamelkadi/terraform-aws-config/commit/623a753a60118073ab4212f5c67c89a311b84418))
+* correct .checkov.yaml format to use simple list instead of id/comment dict ([89ce0c4](https://github.com/islamelkadi/terraform-aws-config/commit/89ce0c462a4b72a5bf6c409366ea56d13800b69d))
+* remove skip-path from .checkov.yaml, rely on workflow-level skip_path ([de6833b](https://github.com/islamelkadi/terraform-aws-config/commit/de6833b64403c48898f7296649b13b3bf1959637))
+* update workflow path reference to terraform-security.yaml ([5246a0b](https://github.com/islamelkadi/terraform-aws-config/commit/5246a0ba183c5764bce9d4bca74e76c0afdcdbb1))
+
+
+### Documentation
+
+* add GitHub Actions workflow status badges ([82a50c2](https://github.com/islamelkadi/terraform-aws-config/commit/82a50c227fb0ce07de4700b1d16c147ced9229fc))
+* add security scan suppressions section to README ([39e36c0](https://github.com/islamelkadi/terraform-aws-config/commit/39e36c0d6c50c40325145341df2b29fe3e028744))
+* added missing TF docs closing tags ([8dc25e5](https://github.com/islamelkadi/terraform-aws-config/commit/8dc25e59617d4340101afdd75e7715baf9799c97))
+* added missing TF docs closing tags ([23c178c](https://github.com/islamelkadi/terraform-aws-config/commit/23c178cecf4bc4659f3178c0dbbbb655d5c18979))
+
 ## 1.0.0 (2026-03-08)
 
 
